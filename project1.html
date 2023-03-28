@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--P5 js script-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+    <!--Animate css library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="icon" href="images/logo.JPG"> <!--Adds an icon next to the title-->
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Project 1</title>
+
+    
+</head>
+
+<body style="overflow: hidden;">
+
+    <div class="position-parent" id="viewPort" style="top: 15%;">
+        <div class="scroll">
+
+            <div class="flex-container" style="color: white; width: 100%; flex-direction: column; top: 0px;">
+                <div class="flex-item" style="flex-direction:column; margin-left: 100px; margin-right: 100px; padding: 0;">
+                    <h2 style="margin: 10px;">Smart Lamp</h2>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; height: 100%;">
+                <iframe src="project_1_carousel_bootstrap.html"></iframe> <!-- The bootstrap carousel. -->
+            </div>
+
+            <div class="flex-container" style="color: white; width: 100%; flex-direction: column; margin-bottom: 5%;">
+                <div class="flex-item" style="flex-direction:column; margin-left: 100px; margin-right: 100px;">
+
+                    <h1 style="background-color: black;">The project</h1> 
+                    <p style="margin-top: 0px; background-color: black;">This is a smart lamp with a light sensor. The light sensor monitors the amount of light in the room and basing on that the lamp will either show the time or some ambient aniations. There is a also a switch that allows the lamp to be turned off and on when needed.</p>
+
+                </div>
+                <div class="flex-item" style="flex-direction:column; margin-left: 100px; margin-right: 100px;">
+
+                    <h1 style="background-color: black;">How the project helped me develop my skills.</h1> 
+                    <p style="margin-top: 0px; background-color: black;"> This projects gave me a good insign into physical computing, the limitations that the physical components bring. I had to programm an arduino, which was responsible for showing the time and swithing between the clock and the ambient mode. As well as, i had to solve different problems, one of which was to power the led to prevent then from overheating, while keeping the brightness of the LEDs constant.</p>
+
+                </div>
+                <div class="flex-item" style="margin: 0;padding: 0; margin-top: 2%;">
+                    <h1>Links</h1> 
+                </div>
+                <div class="flex-item" style="margin: 0;padding: 0;">
+                    <ul style="margin: 0; padding: 0;">
+                        <li><a href="https://github.com/artemdev9/Smart_lamp">Github</a></li> 
+                        <li><a href="https://youtu.be/a0792SlA7WE">Video Demonstration</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--comment out the menu to access the cube, fix it with z index.-->
+    <div class="navMenuArrows" style="height: 0px">
+        <div class="flex-container" style="flex-direction: column;">
+            <button onclick="menu(15);" style="background: none; border: 0px;">
+                <ion-icon class="menuArrow" name="chevron-down-outline" id="menuArrow"></ion-icon>
+            </button>
+            <h3 id="menuText" class="animate__animated animate__flash animate__infinite infinite"
+                style="--animate-duration: 8s; position: relative; bottom: 1.2rem;">menu</h3>
+        </div>
+    </div>
+
+   
+    <div class="menu-container" id="menuAnimation">
+        <div class="menu" id="displayMenu">
+            <div id="menuText" class="flex-container" style="flex-direction: column; height: 100vh;">
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="index.html">About</a>
+                </div>
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="projects.html">Projects</a>
+                </div>
+                <!--
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="about.html">About</a>
+                </div>
+                -->
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="social"><!--Social links-->
+        <div class="flex-container" style="background: none; flex-direction: column; margin-left: 200px;">
+            <div class="flex-item" role="img" alt="Clickable github logo link">
+                <a href="https://github.com/artemdev9?tab=repositories">
+                    <ion-icon class="links" name="logo-github"></ion-icon>
+                </a>
+            </div>
+            <div class="flex-item" role="img" alt="Clickable Instagram logo link">
+                <a href=" https://www.instagram.com/">
+                    <ion-icon class="links" name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+            <div class="flex-item" role="img" alt="Clickable Linkedin logo link">
+                <a href="https://www.linkedin.com/in/artdumchev/">
+                    <ion-icon class="links" name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/javascript.js"></script>
+
+    <!--Ionicons js-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script src="js/sketch.js"></script>
+    
+</body>
+
+</html>

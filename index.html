@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+
+    <!--P5 js script-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+
+    <!--Animate css library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+ 
+
+    <link rel="icon" href="images/logo.JPG"> <!--Adds an icon next to the title-->
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/styles.css">
+
+   
+
+    <title>About</title>
+    <!--Use google fonts.-->
+    <style>
+
+        .scroll{
+            top: 5vh; 
+            height: 80vh; 
+            bottom: 5vh;
+        }
+
+        #welcomeText{
+            font-size: 250%;
+        }
+
+        p{
+            font-size: 160%;
+        }
+
+        @media screen and (max-width: 1000px){
+
+            .container{
+                width: 60%;
+                display: block;
+                margin: auto;
+            }
+
+            .content-section{
+                float: none;
+                width: 80%;
+                display: block;
+                margin: auto;
+            }
+
+            .image-section{
+                float: none;
+                width: 80%;
+                display: block;
+                margin: auto;
+            }
+
+            .scroll{
+                top: 15vh;
+            }
+     
+            #welcomeText{
+                font-size: 170%;
+            }
+
+            h3{
+                font-size: 170%;
+            }
+
+            p{
+                font-size: 140%;
+            }
+
+        } 
+
+    </style>
+
+</head>
+
+<body style="overflow: hidden;">
+    <!--Parent class to house the contact page content.-->
+    <div class="position-parent" id="viewPort">
+        <div class="scroll">
+        <!--Change top:10% to make the scrollable screen less-->
+            <div class="container">
+                <div class="content-section">
+                    <div class="aboutPageTitle">
+                        <h1>  </h1>
+                    </div>
+                    <div class="content" style="background: black;">
+                        <h3 id="welcomeText" style="margin-top: 0;">
+                            Hello and welcome to my website!
+                        </h3> 
+                        <h3>
+                            My name is Artem. I am a programmer with a passion for electronic music and a 2nd Year student at the UAL Creative Computing Institute.
+                        </h3>
+                        <p>
+                            The goal of my work is to combine programming and music to create new and innovative projects. This website aims to showcase my projects for any one who is interested.
+                        </p>
+                    </div>
+                </div>
+                <div class="image-section" style="margin-top: 20px;">
+                    <img src="images/developer.gif" alt="">
+                </div>
+            </div>
+    
+            <div class="social"><!--Social links-->
+                <div class="flex-container" style="background: none; flex-direction: column; margin-left: 200px;">
+                    <div class="flex-item">
+                        <a href="https://github.com/artemdev9?tab=repositories">
+                            <ion-icon class="links" name="logo-github"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="flex-item">
+                        <a href="https://www.instagram.com/">
+                                <ion-icon class="links" name="logo-instagram"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="flex-item">
+                            <a href="https://www.linkedin.com/in/artdumchev/">
+                                <ion-icon class="links" name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navMenuArrows" style="height: 0px">
+        <div class="flex-container" style="flex-direction: column;">
+            <button onclick="menu(0);" style="background: none; border: 0px;">
+                <ion-icon class="menuArrow" name="chevron-down-outline" id="menuArrow"></ion-icon>
+            </button>
+            <h3 id="menuText" class="animate__animated animate__flash animate__infinite infinite" style="--animate-duration: 8s; position: relative; bottom: 1.2rem;">menu</h3>
+        </div>
+    </div>
+
+    <div class="menu-container" id="menuAnimation">
+        <div class="menu" id="displayMenu">
+            <div id="menuText" class="flex-container" style="flex-direction: column; height: 100vh;">
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="index.html">About</a>
+                </div>
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="projects.html">Projects</a>
+                </div>
+                <!--
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="about.html">About</a>
+                </div>
+                -->
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/javascript.js"></script>
+
+    <!--Ionicons js-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script src="../js/sketch.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--P5 js script-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+    <!--Animate css library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="icon" href="images/logo.JPG"> <!--Adds an icon next to the title-->
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--normalize.css used to make all the browsers render elements more consistently-->
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/styles.css">
+
+    <title>Projects</title>
+
+    <style>
+
+        .flex-container{
+            margin-left: 100px; 
+            margin-right: 100px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            /* make the project boxes responsive */
+
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .flex-item{  
+                margin: 5px; 
+            }
+
+
+        }
+
+        @media only screen and (max-width: 500px) {
+
+            h2{
+                font-size: 1rem;
+            }
+
+            h1{
+                font-size: 0.4em;
+            }
+
+            #project1{
+                transform: scale(1.4);
+            }
+
+        }
+
+      
+    </style>
+</head>
+
+<body style="overflow: hidden;">
+
+    <div class="position-parent" id="viewPort" style="top: 15%;">
+        <div class="scroll">
+            <div id="projects">
+
+                <div class="flex-container">
+
+                    <div class="flex-item" id="project1">
+                        <div class="img-container">
+                            <a href="project1.html">
+                                <img class="projects image" onclick="window.location.href='projects.html';" data-tilt
+                                    src="images/lamp3.jpg" alt="Clickable Image of the project">
+
+                                <div class="img-overlay img-overlay--blur">
+                                    <h2 class="img-overlay-title">Smart lamp</h2>
+                                    <h1 class="img-overlay-desc">with a light sensor</h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                   <div class="flex-item" id="project1">
+                        <div class="img-container">
+                            <a href="project2.html">
+                                <img class="projects image" onclick="window.location.href='projects.html';" data-tilt
+                                    src="images/beatmaker4-resize2.JPG" alt="Clickable Image of the project">
+
+                                <div class="img-overlay img-overlay--blur">
+                                    <h2 class="img-overlay-title">BeatMaker</h2>
+                                    <h1 class="img-overlay-desc">
+                                        made with processing
+                                    </h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex-container">
+
+                    <div class="flex-item" id="project1">
+                        <div class="img-container">
+                            <a href="project3.html">
+                                <img class="projects image" onclick="window.location.href='projects.html';" data-tilt
+                                    src="images/soundball-stl.png" alt="Clickable Image of the project">
+
+                                <div class="img-overlay img-overlay--blur">
+                                    <h2 class="img-overlay-title">Sound Ball</h2>
+                                    <h1 class="img-overlay-desc">
+                                        a new way to produce sounds
+                                    </h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex-item" id="project1">
+                        <div class="img-container">
+                            <a href="project4.html">
+                                <img class="projects image" onclick="window.location.href='projects.html';" data-tilt
+                                    src="images/pong1.jpg" alt="Clickable Image of the project">
+
+                                <div class="img-overlay img-overlay--blur">
+                                    <h2 class="img-overlay-title">Pong Game</h2>
+                                    <h1 class="img-overlay-desc">
+                                        made with p5.js
+                                    </h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex-container">
+
+                    <div class="flex-item" id="project1">
+                        <div class="img-container">
+                            <a href="project5.html">
+                                <img class="projects image" onclick="window.location.href='projects.html';" data-tilt
+                                    src="images/parallax_website.png" alt="Clickable Image of the project">
+
+                                <div class="img-overlay img-overlay--blur">
+                                    <h2 class="img-overlay-title">Website</h2>
+                                    <h1 class="img-overlay-desc">
+                                        with a parallax scrolling effect
+                                    </h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex-item" id="project1">
+                        <div class="img-container">
+                            <a href="project6.html">
+                                <img class="projects image" onclick="window.location.href='projects.html';" data-tilt
+                                    src="images/portfolio_website.png" alt="Clickable Image of the project" style="border: 5px solid #ffffff;"> 
+                                    <!--Maybe change the photo on here.-->
+
+                                <div class="img-overlay img-overlay--blur">
+                                    <h2 class="img-overlay-title">Portfolio website</h2>
+                                    <h1 class="img-overlay-desc">
+                                        the website you are currently on 
+                                    </h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="social"><!--Social links-->
+        <div class="flex-container" style="background: none; flex-direction: column; margin-left: 200px;">
+            <div class="flex-item" role="img" alt="Clickable github logo link">
+                <a href="https://github.com/artemdev9?tab=repositories">
+                    <ion-icon class="links" name="logo-github"></ion-icon>
+                </a>
+            </div>
+            <div class="flex-item" role="img" alt="Clickable Instagram logo link">
+                <a href=" https://www.instagram.com/">
+                    <ion-icon class="links" name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+            <div class="flex-item" role="img" alt="Clickable Linkedin logo link">
+                <a href="https://www.linkedin.com/in/artdumchev/">
+                    <ion-icon class="links" name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--comment out the menu to access the cube, fix it with z index.-->
+    <div class="navMenuArrows" style="height: 0px">
+        <div class="flex-container" style="flex-direction: column;">
+            <button onclick="menu(15);" style="background: none; border: 0px;">
+                <ion-icon class="menuArrow" name="chevron-down-outline" id="menuArrow"></ion-icon>
+            </button>
+            <h3 id="menuText" class="animate__animated animate__flash animate__infinite infinite" style="--animate-duration: 8s; position: relative; bottom: 1.2rem;">menu</h3>
+        </div>
+    </div>
+
+    <div class="menu-container" id="menuAnimation">
+        <div class="menu" id="displayMenu">
+            <div id="menuText" class="flex-container" style="flex-direction: column; height: 100vh;">
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="index.html">About</a>
+                </div>
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="projects.html">Projects</a>
+                </div>
+                <!--
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="about.html">About</a>
+                </div>
+                -->
+                <div class="flex-item" id="flexboxMenu">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/javascript.js"></script>
+
+    <!--Ionicons js-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    
+    <script src="js/sketch.js"></script>
+
+</body>
+
+</html>
